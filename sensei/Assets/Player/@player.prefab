@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 909845616730173545}
   - component: {fileID: 1988865199601398662}
   - component: {fileID: 1988865199601398663}
+  - component: {fileID: 6630125235305950483}
   - component: {fileID: 952085985321264500}
   m_Layer: 0
   m_Name: '@player'
@@ -323,6 +324,19 @@ MonoBehaviour:
   _installerPrefabs: []
   _autoRun: 1
   _kernel: {fileID: 0}
+--- !u!114 &6630125235305950483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952085985321264503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359fef63c5b8e11439d146b6b25a0e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoplay: 1
 --- !u!114 &952085985321264500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +399,7 @@ MonoBehaviour:
     soundClip: {fileID: 8300000, guid: 44a48121961ce4b458fe8c8db8fae6e9, type: 3}
   - soundName: 6
     soundClip: {fileID: 8300000, guid: f9bda9d9bad1b8f4083de63d2dea8863, type: 3}
+  musicClipsArray: []
 --- !u!1 &1988865200510023814
 GameObject:
   m_ObjectHideFlags: 0

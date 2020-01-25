@@ -30676,6 +30676,21 @@ PrefabInstance:
       propertyPath: index
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3097274960353351527, guid: 3550d1a72b5961d4f9ce564a15dc87c8,
+        type: 3}
+      propertyPath: spawnX
+      value: 7.620616
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097274960353351527, guid: 3550d1a72b5961d4f9ce564a15dc87c8,
+        type: 3}
+      propertyPath: spawnY
+      value: -0.1007028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097274960353351527, guid: 3550d1a72b5961d4f9ce564a15dc87c8,
+        type: 3}
+      propertyPath: spawnZ
+      value: 12.68386
+      objectReference: {fileID: 0}
     - target: {fileID: 5906793889785115170, guid: 3550d1a72b5961d4f9ce564a15dc87c8,
         type: 3}
       propertyPath: m_Name

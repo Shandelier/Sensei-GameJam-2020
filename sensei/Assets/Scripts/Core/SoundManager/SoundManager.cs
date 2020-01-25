@@ -17,7 +17,28 @@ namespace Core.SoundManager
             Gong3,
 
         }
+        public enum Music{
+            idleAmbient,
+            dynamicRunner,
+            youLostyouDumbCunt
+        }
 
+        private static GameObject MusicPlayer;
+
+        public static void PlayMusic(Music music){
+            AudioClip m = GetMusic(music);
+            AudioSource musicSource;
+            if(MusicPlayer == null){
+                MusicPlayer = new GameObject("MusicPlayer");
+                musicSource = MusicPlayer.AddComponent<AudioSource>();
+            }else{
+                musicSource = MusicPlayer.GetComponent<AudioSource>();
+            }
+
+            musicSource.loop = true;
+            musicSource.clip = m;
+            musicSource.Play();
+        }
 
         public static void PlaySound(Sound sound){
             AudioClip s = GetSound(sound);
@@ -26,6 +47,16 @@ namespace Core.SoundManager
             soundSource.PlayOneShot(s);
             AudioAssets.DestroySound(soundSource, s.length);
             
+        }
+
+        private static AudioClip GetMusic (Music music){
+            foreach (AudioAssets.AudioMusic clip in AudioAssets.Get.musicClipsArray){
+                if(clip.musicName == music){
+                    return clip.soundClip;
+                }
+            }
+            Debug.LogWarning("No sound Clip found");
+            return null;
         }
 
         private static AudioClip GetSound (Sound sound){
@@ -37,8 +68,6 @@ namespace Core.SoundManager
             Debug.LogWarning("No sound Clip found");
             return null;
         }
-
-        
 
     }
     

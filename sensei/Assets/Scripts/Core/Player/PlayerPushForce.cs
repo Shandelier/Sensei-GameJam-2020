@@ -19,7 +19,8 @@ public class PlayerPushForce : MonoBehaviour
             return;
         }
         
-        other.rigidbody.AddForce(GetComponent<Rigidbody>().velocity 
-                                 * impulsePower * (alwaysPush != null ? alwaysPush.impulseScale : 1), ForceMode.Impulse);
+        other.rigidbody.AddForceAtPosition(GetComponent<Rigidbody>().velocity 
+                                 * impulsePower * (alwaysPush != null ? alwaysPush.impulseScale : 1), 
+            transform.position, ForceMode.Impulse);
     }
 }

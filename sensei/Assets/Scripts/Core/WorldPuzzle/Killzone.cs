@@ -12,5 +12,11 @@ public class Killzone : MonoBehaviour
         {
             respwaner.Respawn();
         }
+
+        var player = other.gameObject.GetComponent<PlayerEntity>();
+        if (player)
+        {
+            
+        }
     }
 }

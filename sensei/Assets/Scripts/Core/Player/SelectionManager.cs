@@ -32,7 +32,7 @@ public class SelectionManager : MonoBehaviour
             if (selection.CompareTag(selectableTag))
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
-                if (selectionRenderer != null && !selectionRenderer.GetComponent<Rigidbody>().isKinematic)
+                if (selectionRenderer != null && selection.gameObject.GetComponent<FrozenObjectState>() == null)
                 {
                     defaultMaterial = selectionRenderer.material;
                     selectionRenderer.material = highlightMaterial;

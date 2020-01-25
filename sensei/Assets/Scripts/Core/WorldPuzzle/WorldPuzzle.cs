@@ -6,7 +6,7 @@ using Zenject;
 public class WorldPuzzle : IInitializable
 {
     [Inject] WorldPuzzleLocationBuilder locationBuilder = null;
-    [Inject] Rigidbody playerRigidbody = null;
+    [Inject] Transform playerTransform = null;
 
     public List<WorldPuzzleLocation> puzzleLocations;
     Animator animator = Camera.main.GetComponent<Animator>();
@@ -21,20 +21,33 @@ public class WorldPuzzle : IInitializable
 
             if (isMatching) {
                 puzzleLocations[index].activated = true;
+                Debug.Log("GIT");
+                Debug.Log("GIT");
+                Debug.Log("GIT");
+                Debug.Log("GIT");
             }
         }
     }
 
     private bool isOnPosition(WorldPuzzleLocation location) {
-        bool isOnPosition = this.isWithinSmallDistance(location.position, this.playerRigidbody.transform.position);
-        return isOnPosition;
+        bool isOnPosition = this.isDistanceWithinMargin(location.position, this.playerTransform.position);
+        bool isValidRotation = this.isRotationWithinMargin(location.rotation, this.playerTransform.rotation);
+        return isOnPosition && isValidRotation;
     }
 
-    private bool isWithinSmallDistance(Vector3 locationPosition, Vector3 playerPosition) {
+    private bool isDistanceWithinMargin(Vector3 locationPosition, Vector3 playerPosition) {
         bool XWithinDistance = Mathf.Abs(playerPosition.x - locationPosition.x) < 1f;
         bool YWithinDistance = Mathf.Abs(playerPosition.y - locationPosition.y) < 1f;
         bool ZWithinDistance = Mathf.Abs(playerPosition.z - locationPosition.z) < 1f;
         return XWithinDistance && YWithinDistance && ZWithinDistance;
+    }
+
+    private bool isRotationWithinMargin(Quaternion localtionRotation, Quaternion playerRotation) {
+        float localtionY = localtionRotation.eulerAngles.y;
+        float playerY = playerRotation.eulerAngles.y;
+
+        bool YWithinDistance = Mathf.Abs(localtionY - playerY) < 1f;
+        return YWithinDistance;
     }
 
     private void setWorldPuzzleLocations() {

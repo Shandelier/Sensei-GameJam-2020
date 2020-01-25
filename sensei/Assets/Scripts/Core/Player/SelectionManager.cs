@@ -2,6 +2,7 @@
 using Core.Player;
 using Core.SoundManager;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SelectionManager : MonoBehaviour
 {
@@ -39,7 +40,22 @@ public class SelectionManager : MonoBehaviour
 
                 if (Input.GetKeyDown("f"))
                 {
-                    SoundManager.PlaySound(SoundManager.Sound.Gong1);
+                    var rng = Random.Range(1, 4);
+                    Debug.Log(rng);
+                    switch (rng)
+                    {
+                        case 1: SoundManager.PlaySound(SoundManager.Sound.Gong1);
+                            break;
+                        case 2: SoundManager.PlaySound(SoundManager.Sound.Gong2);
+                            break;
+                        case 3: SoundManager.PlaySound(SoundManager.Sound.Gong3); 
+                            break;
+                            default: break;
+                    }
+                    
+                    
+                    
+                    
                     if (hit.transform.gameObject.GetComponent<FrozenObjectState>() == null)
                     {
                         hit.transform.gameObject.AddComponent<FrozenObjectState>();

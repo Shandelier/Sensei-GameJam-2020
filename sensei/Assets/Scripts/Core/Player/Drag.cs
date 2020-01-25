@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Drag : MonoBehaviour
 {
     float distance;
-    float throwForce = 500;
+    float throwForce = 10;
     public System.DateTime startTime;
+
+    public UnityEvent dragged;
 
     Vector3 basicScale;
     bool touched;
@@ -33,6 +36,8 @@ public class Drag : MonoBehaviour
 
         if (touched)
         {
+            dragged.Invoke();
+            
             Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2);
             Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             this.transform.position = objPosition;
@@ -49,7 +54,8 @@ public class Drag : MonoBehaviour
                 if (holdingBonus > 1000)
                     holdingBonus = 1000;
 
-                GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce * holdingBonus);
+                var rb = GetComponent<Rigidbody>();
+                rb.AddForce(Camera.main.transform.forward * throwForce * holdingBonus * rb.mass, ForceMode.Impulse);
                 touched = false;
                 holded = false;
                 transform.localScale = basicScale;

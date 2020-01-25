@@ -12,5 +12,13 @@ public class Killzone : MonoBehaviour
         {
             respwaner.Respawn();
         }
+
+        var player = other.gameObject.GetComponent<PlayerEntity>();
+        if (player)
+        {
+            Transform playerTransform = GameObject.FindGameObjectsWithTag("PlayerTag")[0].GetComponent<Transform>();
+            playerTransform.position = PlayerRespawnData.checkpointLocation;
+            
+        }
     }
 }

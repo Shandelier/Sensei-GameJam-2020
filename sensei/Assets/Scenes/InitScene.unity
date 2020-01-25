@@ -23141,6 +23141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617644d4fe5f9454a9dc2de7f49d3fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1587554966
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30646,7 +30649,7 @@ PrefabInstance:
     - target: {fileID: 8889483688646962179, guid: 35a832419774357499f6c2dff4233034,
         type: 3}
       propertyPath: m_TagString
-      value: Selectable
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a832419774357499f6c2dff4233034, type: 3}

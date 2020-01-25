@@ -10,16 +10,23 @@ public class UnfreezeOnTouch : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+        if (other.gameObject.GetComponent<PlayerEntity>() == null)
+        {
+            return;
+        }
+        
         if (target == null)
         {
             target = gameObject;
         }
+        
+        
         var targetRb = target.GetComponent<Rigidbody>();
         if (targetRb == null)
         {
             targetRb = target.AddComponent<Rigidbody>();
         }
-
+        
         targetRb.isKinematic = false;
         targetRb.AddForce(impulse, ForceMode.Impulse);
     }

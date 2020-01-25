@@ -8,19 +8,20 @@ namespace Core.SoundManager{
         public static void DestroySound(AudioSource sound, float time){
             Destroy(sound.gameObject, time);
         }
-        // private static AudioAssets _i;
-        // public static AudioAssets i {
-        //     get{
-        //         if(_i == null) 
-        //         _i = Instantiate(Resources.Load<AudioAssets>("AudioAssets/"));
-        //         return _i; 
-        //     }
-        // }
+    
         public AudioSound[] audioClipsArray;
         
-         [System.Serializable]
+        [System.Serializable]
         public class AudioSound{
             public SoundManager.Sound soundName;
+            public AudioClip soundClip;
+        }
+
+        public AudioMusic[] musicClipsArray;
+
+        [System.Serializable]
+        public class AudioMusic{
+            public SoundManager.Music musicName;
             public AudioClip soundClip;
         }
     }

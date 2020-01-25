@@ -1,5 +1,6 @@
 ﻿using System;
 using Core.Player;
+using Core.SoundManager;
 using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
@@ -38,6 +39,7 @@ public class SelectionManager : MonoBehaviour
 
                 if (Input.GetKeyDown("f"))
                 {
+                    SoundManager.PlaySound(SoundManager.Sound.Gong1);
                     if (hit.transform.gameObject.GetComponent<FrozenObjectState>() == null)
                     {
                         hit.transform.gameObject.AddComponent<FrozenObjectState>();

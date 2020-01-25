@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using Core.Player;
+using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
@@ -36,10 +38,16 @@ public class SelectionManager : MonoBehaviour
 
                 if (Input.GetKeyDown("f"))
                 {
-                    if (selectionRenderer.GetComponent<Rigidbody>().isKinematic)
-                        selectionRenderer.GetComponent<Rigidbody>().isKinematic = false;
+                    if (hit.transform.gameObject.GetComponent<FrozenObjectState>() == null)
+                    {
+                        hit.transform.gameObject.AddComponent<FrozenObjectState>();
+                        Debug.Log("freeze");
+                    }
                     else
-                        selectionRenderer.GetComponent<Rigidbody>().isKinematic = true;
+                    {
+                        Destroy(hit.transform.gameObject.GetComponent<FrozenObjectState>());
+                        Debug.Log("unnnfreeze");
+                    }
                 }
 
                 if (Input.GetMouseButtonDown(0))

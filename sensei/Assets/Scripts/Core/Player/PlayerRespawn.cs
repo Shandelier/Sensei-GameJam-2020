@@ -2,31 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class PlayerRespawnData {
+    public static Vector3 checkpointLocation;
+    public static int checkpointIndex = -1;
+}
+
 public class PlayerRespawn : MonoBehaviour
 {
     Transform playerTransform;
-    Vector3 checkpointLocation = new Vector3();
-    int checkpointIndex = -1;
 
     void Start() {
-        this.playerTransform = this.GetComponent<Transform>();
+        this.playerTransform = GameObject.FindGameObjectsWithTag("PlayerTag")[0].GetComponent<Transform>();
     }
 
     void OnTriggerEnter(Collider other) {
-        
-        if(other.tag == "Spawnpoint") {
-            SpawnCheckpoint spawnCheckpoint = other.GetComponent<SpawnCheckpoint>();
+        Debug.Log("1");    
+        if(other.tag == "PlayerTag") {
+            SpawnCheckpoint spawnCheckpoint = this.GetComponent<SpawnCheckpoint>();
 
-            if(this.checkpointIndex != spawnCheckpoint.index) {
+            if(PlayerRespawnData.checkpointIndex != spawnCheckpoint.index) {
+                Debug.Log("2");    
 
-                this.checkpointIndex = spawnCheckpoint.index;
-                this.checkpointLocation = new Vector3(spawnCheckpoint.spawnX, spawnCheckpoint.spawnY, spawnCheckpoint.spawnZ);
+                PlayerRespawnData.checkpointIndex = spawnCheckpoint.index;
+                PlayerRespawnData.checkpointLocation = new Vector3(spawnCheckpoint.spawnX, spawnCheckpoint.spawnY, spawnCheckpoint.spawnZ);
             }
         }
     }
 
     public void respawnPlayer() {
-        this.playerTransform.position = checkpointLocation;
+        this.playerTransform.position = PlayerRespawnData.checkpointLocation;
     }
 
     void Update() {

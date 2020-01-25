@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,11 @@ public class PlayerEntity : MonoBehaviour {
 
     [Inject] WorldPuzzle worldPuzzle = null;
     float counter = 0f;
+
+    void Start()
+    {
+        gameObject.AddComponent<PlayerPushForce>();
+    }
 
     public void Update() {
         this.counter += Time.deltaTime;

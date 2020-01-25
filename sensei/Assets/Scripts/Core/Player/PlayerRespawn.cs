@@ -35,7 +35,7 @@ public class PlayerRespawn : MonoBehaviour
     }
 
     void Update() {
-        Debug.Log("aaa");
+        //Debug.Log("aaa");
         if (Input.GetKeyDown(KeyCode.G)) this.respawnPlayer();
     }
 }

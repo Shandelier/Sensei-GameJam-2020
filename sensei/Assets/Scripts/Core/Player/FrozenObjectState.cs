@@ -12,15 +12,21 @@ namespace Core.Player
         Material objMaterial;
         Material originalMateial;
         Color originalColor;
+        FrozenObjectSettings settings;
 
         private void Start()
         {
+            settings = GetComponent<FrozenObjectSettings>();
+            
             var rb = GetComponent<Rigidbody>();
             if (rb != null)
             {
                 savedVelocity = rb.velocity;
                 savedAngularVelocity = rb.angularVelocity;
-                rb.isKinematic = true;
+                if (!settings || settings.changeKinematic)
+                {
+                    rb.isKinematic = true;
+                }
             }
 
             this.startBlinking();
@@ -65,10 +71,13 @@ namespace Core.Player
             var rb = GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.isKinematic = false;
+                if (!settings || settings.changeKinematic)
+                {
+                    rb.isKinematic = true;
+                }
+                
                 rb.velocity = savedVelocity;
                 rb.angularVelocity = savedAngularVelocity;
-                Debug.Log($"velocity {savedVelocity}");
             }
         }
     }

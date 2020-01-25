@@ -8,6 +8,9 @@ public class Killzone : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         var respwaner = other.gameObject.GetComponent<ObjectRespawner>();
-        respwaner.Respawn();
+        if (respwaner != null)
+        {
+            respwaner.Respawn();
+        }
     }
 }

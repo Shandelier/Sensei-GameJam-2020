@@ -1,7 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
+
+public interface IGrapplingHookable
+{
+    Vector3 GetTargetPoint(RaycastHit hit, GameObject player);
+    Vector3 GetVisualTargetPoint(RaycastHit hit, GameObject player);
+}
 
 public class SpoderMan : MonoBehaviour
 {
@@ -9,17 +16,19 @@ public class SpoderMan : MonoBehaviour
     float maxDistance = 100;
     float springStrength = 20;
     float springDistanceFactor = 0.5f;
-    bool isHooked;
+    bool isAttached;
     bool isLaunched;
     Vector3 handOffset = new Vector3(0.3f, 0, 0.7f);
 
     LineRenderer line;
     Rigidbody rb;
+    UnityEvent released = new UnityEvent();
 
     float hookDistance;
     Vector3 hookPosition;
     Vector3 hookVelocity;
-    Vector3 hookPoint;
+    Vector3 attachedPoint;
+    Vector3 visualAttachedPoint;
     
     void Start()
     {
@@ -34,12 +43,19 @@ public class SpoderMan : MonoBehaviour
             return;
         }
         
-        if (isHooked || isLaunched)
+        if (isAttached || isLaunched)
         {
             line.enabled = true;
             line.positionCount = 2;
             line.SetPosition(0, transform.TransformPoint(handOffset));
-            line.SetPosition(1, hookPosition);
+            if (isAttached)
+            {
+                line.SetPosition(1, visualAttachedPoint);
+            }
+            else
+            {
+                line.SetPosition(1, hookPosition);
+            }
         }
         else
         {
@@ -54,9 +70,10 @@ public class SpoderMan : MonoBehaviour
                 isLaunched = false;
                 Debug.Log("Launch Cancelled");
             } 
-            else if (isHooked)
+            else if (isAttached)
             {
-                isHooked = false;
+                isAttached = false;
+                released.Invoke();
                 Debug.Log("Hook Detached");
             }
             else
@@ -85,23 +102,33 @@ public class SpoderMan : MonoBehaviour
                 if (hit.collider.gameObject.tag != "PlayerTag")
                 {
                     Debug.Log("Hooked!");
-                    hookPoint = hit.point;
-                    hookPosition = hookPoint;
-                    hookDistance = Vector3.Distance(hookPoint, Camera.main.transform.position) * springDistanceFactor;
-                    isHooked = true;
+                    
+                    var handler = hit.collider.GetComponent<IGrapplingHookable>();
+                    if (handler != null)
+                    {
+                        attachedPoint = handler.GetTargetPoint(hit, gameObject);
+                        visualAttachedPoint = handler.GetVisualTargetPoint(hit, gameObject);
+                    }
+                    else
+                    {
+                        attachedPoint = visualAttachedPoint = hit.point;
+                    }
+
+                    hookPosition = attachedPoint;
+                    hookDistance = Vector3.Distance(attachedPoint, Camera.main.transform.position) * springDistanceFactor;
+                    isAttached = true;
                     isLaunched = false;
                     break;
                 }
             }
         }
 
-        if (isHooked)
+        if (isAttached)
         {
-            var dist = Vector3.Distance(transform.position, hookPoint);
+            var dist = Vector3.Distance(transform.position, attachedPoint);
             if (dist > hookDistance)
             {
-                Debug.Log("Apply force " + dist);
-                rb.AddForce((hookPoint - transform.position) * springStrength);
+                rb.AddForce((attachedPoint - transform.position) * springStrength);
             }
         }
     }

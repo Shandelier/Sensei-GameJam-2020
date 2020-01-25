@@ -19,12 +19,13 @@ public class PlayerRespawn : MonoBehaviour
         Debug.Log("1");    
         if(other.tag == "PlayerTag") {
             SpawnCheckpoint spawnCheckpoint = this.GetComponent<SpawnCheckpoint>();
+            Vector3 spawnPosition = this.GetComponent<Transform>().position;
 
             if(PlayerRespawnData.checkpointIndex != spawnCheckpoint.index) {
                 Debug.Log("2");    
 
                 PlayerRespawnData.checkpointIndex = spawnCheckpoint.index;
-                PlayerRespawnData.checkpointLocation = new Vector3(spawnCheckpoint.spawnX, spawnCheckpoint.spawnY, spawnCheckpoint.spawnZ);
+                PlayerRespawnData.checkpointLocation = spawnPosition;
             }
         }
     }
@@ -34,6 +35,7 @@ public class PlayerRespawn : MonoBehaviour
     }
 
     void Update() {
+        Debug.Log("aaa");
         if (Input.GetKeyDown(KeyCode.G)) this.respawnPlayer();
     }
 }

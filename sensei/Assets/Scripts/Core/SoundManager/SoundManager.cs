@@ -48,6 +48,7 @@ namespace Core.SoundManager
 
             musicSource.loop = true;
             musicSource.clip = m;
+            musicSource.volume = 0.5f;
             musicSource.Play();
         }
 

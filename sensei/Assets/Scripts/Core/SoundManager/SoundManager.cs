@@ -18,7 +18,11 @@ namespace Core.SoundManager
             Notification,
             Checkpoint,
             Throw,
-            Whip
+            Whip,
+            voice1,
+            voice2,
+            voice3,
+            voice4
         }
         
         public enum Music{

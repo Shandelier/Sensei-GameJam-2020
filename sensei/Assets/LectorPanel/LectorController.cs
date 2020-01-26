@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Core.SoundManager;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -35,6 +36,22 @@ public class LectorController : MonoBehaviourSingleton<LectorController>
     public void Show(float delay, float duration, string text)
     {
         StartCoroutine(ShowDialogue(delay, duration, text));
+        int random = Random.Range(0, 4)%4;
+
+        switch (random)
+        {
+            case 0:
+                SoundManager.PlaySound(SoundManager.Sound.voice1);
+                break;
+            case 1:
+                SoundManager.PlaySound(SoundManager.Sound.voice2); break;
+            case 2:
+                SoundManager.PlaySound(SoundManager.Sound.voice3); break;
+            case 3:
+                SoundManager.PlaySound(SoundManager.Sound.voice4); break;
+            default:
+                SoundManager.PlaySound(SoundManager.Sound.voice4); break;
+        }
     }
 
     void Update()

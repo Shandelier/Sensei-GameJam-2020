@@ -30,15 +30,6 @@ public class LectorController : MonoBehaviourSingleton<LectorController>
 
         TextField.text = "Huh... are you waked up?";
         Panel.SetActive(false);
-
-        coroutine = ShowDialogue(2, 5, "Hi, I have to tell you something!");
-        StartCoroutine(coroutine);
-
-        coroutine = ShowDialogue(8, 5, "Trust me, I'm game engineer...");
-        StartCoroutine(coroutine);
-
-        coroutine = ShowDialogue(15, 5, "To pass it, read every HINTS.");
-        StartCoroutine(coroutine);
     }
 
     public void Show(float delay, float duration, string text)

@@ -24,6 +24,8 @@ public class PlayerEntity : MonoBehaviour {
             this.worldPuzzle.checkForMatchingWithPuzzles();
             this.resetCounter();
         }
+
+        Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, Mathf.Lerp(80, 100, Mathf.InverseLerp(0, 30, GetComponent<Rigidbody>().velocity.magnitude)), 0.1f);
     }
 
     private void resetCounter() {

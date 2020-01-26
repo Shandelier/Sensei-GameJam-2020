@@ -10,7 +10,7 @@ namespace Core.SoundManager{
         
         void Start(){
             if(autoplay && AudioAssets.Get.musicClipsArray != null){
-                SoundManager.PlayMusic(SoundManager.Music.idleAmbient);
+                SoundManager.PlayMusic(SoundManager.Music.Music);
             }
         }
     }

@@ -34,6 +34,22 @@ public class GrapplingHook : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
         rb = GetComponent<Rigidbody>();
+ 
+        var player = GetComponent<PlayerEntity>();
+        player.died.AddListener(OnDied);
+    }
+
+    void OnDied()
+    {
+        if (isLaunched)
+        {
+            isLaunched = false;
+        } 
+        else if (isAttached)
+        {
+            isAttached = false;
+            released.Invoke();
+        }
     }
     
     void Update()
@@ -62,8 +78,17 @@ public class GrapplingHook : MonoBehaviour
             line.enabled = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isAttached)
+            {
+                isAttached = false;
+                released.Invoke();
+            }
+        }
+
         
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.E))
         {
             if (isLaunched)
             {

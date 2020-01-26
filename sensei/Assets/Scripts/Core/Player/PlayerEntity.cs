@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 public class PlayerEntity : MonoBehaviour {
 
     [Inject] WorldPuzzle worldPuzzle = null;
     float counter = 0f;
+    
+    public UnityEvent died = new UnityEvent();
 
     void Start()
     {

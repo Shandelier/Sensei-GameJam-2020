@@ -18,7 +18,8 @@ public class Killzone : MonoBehaviour
         {
             Transform playerTransform = GameObject.FindGameObjectsWithTag("PlayerTag")[0].GetComponent<Transform>();
             playerTransform.position = PlayerRespawnData.checkpointLocation;
-            
+            player.died.Invoke();
+
         }
     }
 }

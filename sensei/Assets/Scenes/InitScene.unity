@@ -29086,19 +29086,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1988865199437324319, guid: d2ce14700deef7f40b06d090db0abf79,
         type: 3}
-      propertyPath: musicClipsArray.Array.size
-      value: 2
+      propertyPath: audioClipsArray.Array.data[7].soundName
+      value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 1988865199437324319, guid: d2ce14700deef7f40b06d090db0abf79,
-        type: 3}
-      propertyPath: musicClipsArray.Array.data[1].musicName
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1988865199437324319, guid: d2ce14700deef7f40b06d090db0abf79,
-        type: 3}
-      propertyPath: musicClipsArray.Array.data[1].soundClip
-      value: 
-      objectReference: {fileID: 8300000, guid: f0e9059ec24690d44bb01460ea9ad3d8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2ce14700deef7f40b06d090db0abf79, type: 3}
 --- !u!1 &1053089389
@@ -32661,9 +32651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46bab02690047f40a7c08e9d67bd2b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buddha1: {fileID: 0}
-  buddha2: {fileID: 0}
-  buddha3: {fileID: 0}
+  buddha1: {fileID: 852106263}
+  buddha2: {fileID: 869591728}
+  buddha3: {fileID: 388340659}
 --- !u!65 &1198582275
 BoxCollider:
   m_ObjectHideFlags: 0

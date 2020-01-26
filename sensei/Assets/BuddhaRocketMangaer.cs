@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core.SoundManager;
+using UniRx.Async;
 
 public class BuddhaRocketMangaer : MonoBehaviour
 {
@@ -16,12 +18,28 @@ public class BuddhaRocketMangaer : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other) {
+    private async UniTask OnCollisionEnter(Collision other) {
         if (this.playOnce) {
-            this.playOnce = false;
-            Debug.Log("aaaaa");
-            if(other.collider.tag == "PlayerTag") {
-            Debug.Log("bbbbb");
+            Debug.Log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            if(other.gameObject.tag == "PlayerTag") {
+                this.playOnce = false;
+                Debug.Log("YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY");
+
+                await UniTask.Delay(8000, ignoreTimeScale: false);
+
+                SoundManager.PlaySound(SoundManager.Sound.ducktales);
+                
+                await UniTask.Delay(2000, ignoreTimeScale: false);
+
+                this.buddha1.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0), ForceMode.Acceleration);
+
+                await UniTask.Delay(1000, ignoreTimeScale: false);
+
+                this.buddha2.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0), ForceMode.Acceleration);
+
+                await UniTask.Delay(1000, ignoreTimeScale: false);
+
+                this.buddha3.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0), ForceMode.Acceleration);
                 
             }
         }

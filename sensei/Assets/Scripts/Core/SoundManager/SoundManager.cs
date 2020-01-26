@@ -22,7 +22,8 @@ namespace Core.SoundManager
             voice1,
             voice2,
             voice3,
-            voice4
+            voice4,
+            ducktales
         }
         
         public enum Music{

@@ -522,9 +522,13 @@ MonoBehaviour:
     soundClip: {fileID: 8300000, guid: 361e567f342d6834083c6e09a91ae6ef, type: 3}
   - soundName: 10
     soundClip: {fileID: 8300000, guid: c24ae257828e0bf4daf415192aa67eb9, type: 3}
+  - soundName: 11
+    soundClip: {fileID: 8300000, guid: f0e9059ec24690d44bb01460ea9ad3d8, type: 3}
   musicClipsArray:
   - musicName: 1
     soundClip: {fileID: 8300000, guid: 4404477b2a70c764a84ad1af7df9535e, type: 3}
+  - musicName: 4
+    soundClip: {fileID: 8300000, guid: f0e9059ec24690d44bb01460ea9ad3d8, type: 3}
 --- !u!1 &1988865200510023814
 GameObject:
   m_ObjectHideFlags: 0

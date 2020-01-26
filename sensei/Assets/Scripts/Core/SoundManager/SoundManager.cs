@@ -29,7 +29,8 @@ namespace Core.SoundManager
             idleAmbient,
             Music,
             dynamicRunner,
-            youLostyouDumbCunt
+            youLostyouDumbCunt,
+            ducktales
         }
 
         private static GameObject MusicPlayer;

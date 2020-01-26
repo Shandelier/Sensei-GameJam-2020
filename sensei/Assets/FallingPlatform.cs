@@ -30,7 +30,7 @@ public class FallingPlatform : MonoBehaviour
 
         objRigibdoby.isKinematic = false;
         objRigibdoby.useGravity = true;
-        objRigibdoby.AddForce(new Vector3(0, -100, 0), ForceMode.Impulse);
+        objRigibdoby.AddForce(new Vector3(0, 100, 0), ForceMode.Impulse);
 
         await UniTask.Delay(10000, ignoreTimeScale: false);;
 

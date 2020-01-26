@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LectorController : MonoBehaviour
+public class LectorController : MonoBehaviourSingleton<LectorController>
 {
     public GameObject Panel;
     public Text TextField;
@@ -39,6 +39,11 @@ public class LectorController : MonoBehaviour
 
         coroutine = ShowDialogue(15, 5, "To pass it, read every HINTS.");
         StartCoroutine(coroutine);
+    }
+
+    public void Show(float delay, float duration, string text)
+    {
+        StartCoroutine(ShowDialogue(delay, duration, text));
     }
 
     void Update()

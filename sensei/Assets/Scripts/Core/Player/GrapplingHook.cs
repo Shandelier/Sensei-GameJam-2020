@@ -21,6 +21,8 @@ public class GrapplingHook : MonoBehaviour
     bool isLaunched;
     Vector3 handOffset = new Vector3(0.3f, 0, 0.7f);
 
+    [SerializeField] public GameObject rightHand;
+
     LineRenderer line;
     Rigidbody rb;
     UnityEvent released = new UnityEvent();
@@ -95,12 +97,14 @@ public class GrapplingHook : MonoBehaviour
             {
                 isLaunched = false;
                 Debug.Log("Launch Cancelled");
-            } 
+                rightHand.SetActive(true);
+            }
             else if (isAttached)
             {
                 isAttached = false;
                 released.Invoke();
                 Debug.Log("Hook Detached");
+                rightHand.SetActive(true);
             }
             else
             {
@@ -108,6 +112,7 @@ public class GrapplingHook : MonoBehaviour
                 isLaunched = true;
                 hookPosition = Camera.main.transform.position;
                 hookVelocity = Camera.main.transform.forward * speed;
+                rightHand.SetActive(false);
             }
         }
 

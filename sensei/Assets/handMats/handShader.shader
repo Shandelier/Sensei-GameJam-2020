@@ -13,8 +13,8 @@
                 "Queue" = "Transparent"
              }
         LOD 200
-        ZTest Off
-        Cull Back
+        // ZTest Always
+        // Cull Back
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Standard fullforwardshadows

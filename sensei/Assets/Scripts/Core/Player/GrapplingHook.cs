@@ -10,7 +10,7 @@ public interface IGrapplingHookable
     Vector3 GetVisualTargetPoint(RaycastHit hit, GameObject player);
 }
 
-public class SpoderMan : MonoBehaviour
+public class GrapplingHook : MonoBehaviour
 {
     float speed = 60;
     float maxDistance = 100;

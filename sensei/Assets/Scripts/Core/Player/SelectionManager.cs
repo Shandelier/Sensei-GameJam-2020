@@ -17,7 +17,7 @@ public class SelectionManager : MonoBehaviour
     
     private void Update()
     {
-        if (_selection != null)
+        if (_selection != null && _selection.gameObject.GetComponent<FrozenObjectState>() == null)
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
             selectionRenderer.material = defaultMaterial;
@@ -31,13 +31,6 @@ public class SelectionManager : MonoBehaviour
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
             {
-                var selectionRenderer = selection.GetComponent<Renderer>();
-                if (selectionRenderer != null && selection.gameObject.GetComponent<FrozenObjectState>() == null)
-                {
-                    defaultMaterial = selectionRenderer.material;
-                    selectionRenderer.material = highlightMaterial;
-                }
-
                 if (Input.GetKeyDown("f"))
                 {
                     var rng = Random.Range(1, 4);
@@ -66,6 +59,13 @@ public class SelectionManager : MonoBehaviour
                         Destroy(hit.transform.gameObject.GetComponent<FrozenObjectState>());
                         Debug.Log("unnnfreeze");
                     }
+                }
+
+                var selectionRenderer = selection.GetComponent<Renderer>();
+                if (selectionRenderer != null && selection.gameObject.GetComponent<FrozenObjectState>() == null)
+                {
+                    defaultMaterial = selectionRenderer.material;
+                    selectionRenderer.material = highlightMaterial;
                 }
 
                 if (Input.GetMouseButtonDown(0))

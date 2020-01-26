@@ -2,198 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf5eb90-57c2-4c8f-882a-5948063602dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/DOTween.meta" beforeDir="false" afterPath="$PROJECT_DIR$/sensei/Assets/DOTween.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/DOTween/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_001.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_002.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_003.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_004.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_005.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_006.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_007.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_008.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_009.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_010.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_011.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_012.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_013.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_014.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_015.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_016.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_017.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_018.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_019.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_020.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_021.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_022.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_023.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_024.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_025.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_026.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_027.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_028.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_029.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_030.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_031.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_032.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_033.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_034.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_035.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_036.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_037.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_038.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_039.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_040.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_041.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_042.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_043.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_044.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_045.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_046.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_047.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_048.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_049.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_050.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_051.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_052.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_053.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_054.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_055.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_056.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_057.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_058.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_059.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_060.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_061.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_062.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_063.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_064.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_065.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_066.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_067.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_068.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_069.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_070.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_071.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_072.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_073.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_074.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_075.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_076.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_077.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_078.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_079.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_080.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_081.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_082.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_083.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_084.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_085.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_086.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_087.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_088.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_089.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_090.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_091.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_092.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_093.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_094.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_095.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_096.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_097.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_098.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_099.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_100.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_101.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_102.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_103.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_104.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_105.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_106.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_107.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_108.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_109.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_110.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_111.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_112.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_113.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_114.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_115.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_116.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_117.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_118.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_119.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_120.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_121.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_122.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_123.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_124.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_125.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_126.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_127.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_128.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_129.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_130.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_131.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_132.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_133.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_134.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_135.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_136.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_137.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_138.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_139.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_140.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_141.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_142.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_143.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_144.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_145.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_146.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_147.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_148.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_149.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_150.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_151.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_152.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_153.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_154.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_155.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_156.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_157.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_158.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_159.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_160.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_161.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_162.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_163.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_164.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_165.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_166.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_167.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_168.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_169.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_170.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_171.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_172.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_173.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_174.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_175.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_001.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_002.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_003.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_004.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_005.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_006.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_007.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_008.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_009.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_010.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_011.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_012.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Nature pack extended/naturePack_flat_013.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensei/Assets/DOTween.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sensei/Assets/Resources/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sensei/Assets/Resources/PlayerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensei/Assets/Scenes/InitScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/sensei/Assets/Scenes/InitScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensei/Assets/Scripts/Core/WorldPuzzle/WorldPuzzle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sensei/Assets/Scripts/Core/WorldPuzzle/WorldPuzzle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensei/Assets/Scripts/Core/WorldPuzzle/WorldPuzzleLocationConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sensei/Assets/Scripts/Core/WorldPuzzle/WorldPuzzleLocationConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensei/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/sensei/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -207,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="163" />
     <option name="y" value="-23" />
     <option name="width" value="1936" />
@@ -252,17 +63,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />

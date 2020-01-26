@@ -16,7 +16,9 @@ namespace Core.SoundManager
             Gong2,
             Gong3,
             Notification,
-            Checkpoint
+            Checkpoint,
+            Throw,
+            Whip
         }
         
         public enum Music{

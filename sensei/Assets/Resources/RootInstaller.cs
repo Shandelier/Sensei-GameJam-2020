@@ -14,7 +14,6 @@ public class RootInstaller : MonoInstaller
 
     private void installInputBindings() {
         Container.BindInterfacesAndSelfTo<GameLoop>().AsSingle();
-        Container.BindInterfacesAndSelfTo<MeteorShower>().AsSingle();
     }
 
 }

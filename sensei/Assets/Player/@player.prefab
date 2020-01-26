@@ -351,6 +351,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbfcb11b183f314bb8902aaf0bfee09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  died:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!120 &921320335
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -510,6 +513,14 @@ MonoBehaviour:
     soundClip: {fileID: 8300000, guid: 44a48121961ce4b458fe8c8db8fae6e9, type: 3}
   - soundName: 6
     soundClip: {fileID: 8300000, guid: f9bda9d9bad1b8f4083de63d2dea8863, type: 3}
+  - soundName: 7
+    soundClip: {fileID: 8300000, guid: 321a6b8b9c4e9eb4db2096785526fead, type: 3}
+  - soundName: 8
+    soundClip: {fileID: 8300000, guid: ef4bdcf34e2df7b4eb993e25058641a3, type: 3}
+  - soundName: 9
+    soundClip: {fileID: 8300000, guid: 361e567f342d6834083c6e09a91ae6ef, type: 3}
+  - soundName: 10
+    soundClip: {fileID: 8300000, guid: c24ae257828e0bf4daf415192aa67eb9, type: 3}
   musicClipsArray: []
 --- !u!1 &1988865200510023814
 GameObject:

@@ -522,8 +522,16 @@ MonoBehaviour:
     soundClip: {fileID: 8300000, guid: 361e567f342d6834083c6e09a91ae6ef, type: 3}
   - soundName: 10
     soundClip: {fileID: 8300000, guid: c24ae257828e0bf4daf415192aa67eb9, type: 3}
-  - soundName: 11
+  - soundName: 15
     soundClip: {fileID: 8300000, guid: f0e9059ec24690d44bb01460ea9ad3d8, type: 3}
+  - soundName: 11
+    soundClip: {fileID: 8300000, guid: 39064093760de4141b78b7a3a218923f, type: 3}
+  - soundName: 12
+    soundClip: {fileID: 8300000, guid: 9ce3d5b63d46358449052db4dd475583, type: 3}
+  - soundName: 13
+    soundClip: {fileID: 8300000, guid: b5098d3f22065454baea19e004045abd, type: 3}
+  - soundName: 14
+    soundClip: {fileID: 8300000, guid: e51606e25410d54498bb9df5522ecee0, type: 3}
   musicClipsArray:
   - musicName: 1
     soundClip: {fileID: 8300000, guid: 4404477b2a70c764a84ad1af7df9535e, type: 3}

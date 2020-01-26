@@ -23,6 +23,7 @@ namespace Core.SoundManager
         
         public enum Music{
             idleAmbient,
+            Music,
             dynamicRunner,
             youLostyouDumbCunt
         }

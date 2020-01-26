@@ -24,8 +24,9 @@ public class SpawnCheckpoint : MonoBehaviour
             var myParticleSystem = gameObject.GetComponentInChildren<ParticleSystem>();
 
             if (myParticleSystem != null && this.index != PlayerRespawnData.checkpointIndex) {
-                myParticleSystem.Emit(80);
                 SoundManager.PlaySound(SoundManager.Sound.Checkpoint);
+                GameObject.FindGameObjectsWithTag("LightSource")[0].GetComponent<Animation>().Play();
+                myParticleSystem.Emit(80);
                 // Destroy(myParticleSystem, 10);
             }
         }

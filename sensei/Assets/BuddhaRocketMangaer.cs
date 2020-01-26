@@ -27,7 +27,7 @@ public class BuddhaRocketMangaer : MonoBehaviour
 
                 await UniTask.Delay(8000, ignoreTimeScale: false);
 
-                SoundManager.PlaySound(SoundManager.Sound.ducktales);
+                SoundManager.PlayMusic(SoundManager.Music.ducktales);
                 
                 await UniTask.Delay(2000, ignoreTimeScale: false);
 

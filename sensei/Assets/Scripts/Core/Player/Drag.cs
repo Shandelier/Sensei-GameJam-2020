@@ -15,9 +15,13 @@ public class Drag : MonoBehaviour
     Vector3 basicScale;
     bool touched;
     bool holded;
+    private Collider col;
+    private Rigidbody rb;
 
     private void Start()
     {
+        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
         basicScale = transform.localScale;
         touched = false;
         holded = false;
@@ -33,11 +37,15 @@ public class Drag : MonoBehaviour
             {
                 HandTransitions.playGrab();
                 touched = true;
+                col.enabled = false;
+                rb.useGravity = false;
             }
             else
             {
                 HandTransitions.playRelease();
                 touched = false;
+                col.enabled = true;
+                rb.useGravity = false;
             }
         }
 
@@ -51,7 +59,6 @@ public class Drag : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1))
             {
-                
                 startTime = System.DateTime.UtcNow;
                 holded = true;
             }
@@ -63,10 +70,11 @@ public class Drag : MonoBehaviour
                 if (holdingBonus > 1000)
                     holdingBonus = 1000;
 
-                var rb = GetComponent<Rigidbody>();
                 rb.AddForce(Camera.main.transform.forward * throwForce * holdingBonus * rb.mass, ForceMode.Impulse);
+                StartCoroutine(ChangeBackMass(rb, holdingBonus/100f));
                 touched = false;
                 holded = false;
+                col.enabled = true;
                 transform.localScale = basicScale;
                 SoundManager.PlaySound(SoundManager.Sound.Throw);
             }
@@ -74,5 +82,15 @@ public class Drag : MonoBehaviour
 
         if (holded && (transform.localScale.x < 2 * basicScale.x))
             transform.localScale += new Vector3(0.03f, 0.03f, 0.03f);
+    }
+    IEnumerator ChangeBackMass(Rigidbody rb, float waitTime){
+        if(rb.SweepTest(Vector3.zero, out RaycastHit hit, 0f)){
+            rb.useGravity = true;
+            print("dupa");
+            yield break;
+        }
+        yield return new WaitForSeconds(.2f + waitTime);
+        rb.useGravity = true;
+
     }
 }

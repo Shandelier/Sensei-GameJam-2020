@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: You can't Double Jump in this game!
+  text: Nie ma tu Double Jumpa!
   duration: 3
 --- !u!1 &1948803233
 GameObject:
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Press E again to release
+  text: Dawaj E!
   duration: 3
 --- !u!1 &4373949817118782054
 GameObject:

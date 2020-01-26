@@ -1,5 +1,346 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &183067344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183067345}
+  - component: {fileID: 183067348}
+  - component: {fileID: 183067347}
+  - component: {fileID: 183067346}
+  m_Layer: 0
+  m_Name: MoonDragging
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &183067345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183067344}
+  m_LocalRotation: {x: 0.022020023, y: -0.2207651, z: -0.029744966, w: 0.9746246}
+  m_LocalPosition: {x: 48.78, y: 0.6, z: 134.61}
+  m_LocalScale: {x: 12.554002, y: 11.243021, z: 17.33115}
+  m_Children: []
+  m_Father: {fileID: 95126565578331562}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 1.7070001, y: -25.584002, z: -3.8840003}
+--- !u!33 &183067348
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183067344}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &183067347
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183067344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &183067346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183067344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Lewy Przycisk -- podnoszenie ma\u0142ych przedmiot\xF3w"
+  duration: 5
+--- !u!1 &475365317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475365318}
+  - component: {fileID: 475365321}
+  - component: {fileID: 475365320}
+  - component: {fileID: 475365319}
+  m_Layer: 0
+  m_Name: MountainWaypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475365318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475365317}
+  m_LocalRotation: {x: -0.012758197, y: 0.051341914, z: 0.0070251343, w: 0.9985749}
+  m_LocalPosition: {x: -44.81, y: 10.66, z: 213.89}
+  m_LocalScale: {x: 12.554, y: 11.001343, z: 22.884956}
+  m_Children: []
+  m_Father: {fileID: 95126565578331562}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -1.501, y: 5.8770003, z: 0.72900003}
+--- !u!33 &475365321
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475365317}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &475365320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475365317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &475365319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475365317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Lataj\u0105ca epeleryna na szczycie tej g\xF3ry"
+  duration: 3
+--- !u!1 &1044424589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044424590}
+  - component: {fileID: 1044424593}
+  - component: {fileID: 1044424592}
+  - component: {fileID: 1044424591}
+  m_Layer: 0
+  m_Name: GrapplingHookText1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044424590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044424589}
+  m_LocalRotation: {x: -0.071591154, y: -0.08094883, z: 0.005829457, w: 0.9941268}
+  m_LocalPosition: {x: 31.29, y: -23.23, z: -16.03}
+  m_LocalScale: {x: 12.554002, y: 11.243021, z: 17.33115}
+  m_Children: []
+  m_Father: {fileID: 95126565578331562}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -8.129001, y: -9.406, z: 1.342}
+--- !u!33 &1044424593
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044424589}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1044424592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044424589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1044424591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044424589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "nie u\u017Cywaj grapling hooka pod E"
+  duration: 5
+--- !u!1 &1126977846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126977847}
+  - component: {fileID: 1126977850}
+  - component: {fileID: 1126977849}
+  - component: {fileID: 1126977848}
+  m_Layer: 0
+  m_Name: StealingMoon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1126977847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126977846}
+  m_LocalRotation: {x: 0.034720663, y: 0.3495129, z: -0.012810936, w: 0.9362004}
+  m_LocalPosition: {x: 30.589996, y: 0.29999995, z: 155.49}
+  m_LocalScale: {x: 12.554002, y: 11.243021, z: 17.33115}
+  m_Children: []
+  m_Father: {fileID: 95126565578331562}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 4.242, y: 40.945004, z: 0.016}
+--- !u!33 &1126977850
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126977846}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1126977849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126977846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1126977848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126977846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Znajd\u017A ksi\u0119\u017Cyc na niebie by znale\u017A\u0107 drog\u0119
+    na ziemi. "
+  duration: 3
+--- !u!1 &1151771945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1151771946}
+  - component: {fileID: 1151771949}
+  - component: {fileID: 1151771948}
+  - component: {fileID: 1151771947}
+  m_Layer: 0
+  m_Name: ShiftText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1151771946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151771945}
+  m_LocalRotation: {x: -0.071591154, y: -0.08094883, z: 0.005829457, w: 0.9941268}
+  m_LocalPosition: {x: 210.65, y: 24.01, z: 111.27}
+  m_LocalScale: {x: 12.554002, y: 11.243021, z: 17.33115}
+  m_Children: []
+  m_Father: {fileID: 95126565578331562}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: -8.129001, y: -9.406, z: 1.342}
+--- !u!33 &1151771949
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151771945}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1151771948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151771945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1151771947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151771945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: bieganie jest niebezpieczne
+  duration: 5
 --- !u!1 &1206852047
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206852047}
   m_LocalRotation: {x: -0.071591154, y: -0.08094883, z: 0.005829457, w: 0.9941268}
-  m_LocalPosition: {x: 27.244614, y: -23.331036, z: -16.725204}
+  m_LocalPosition: {x: 131.24, y: -1.33, z: 143.27}
   m_LocalScale: {x: 12.554002, y: 11.243021, z: 17.33115}
   m_Children: []
   m_Father: {fileID: 95126565578331562}
@@ -68,6 +409,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: You can't Double Jump in this game!
   duration: 3
+--- !u!1 &1948803233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948803234}
+  - component: {fileID: 1948803237}
+  - component: {fileID: 1948803236}
+  - component: {fileID: 1948803235}
+  m_Layer: 0
+  m_Name: StealingMoon-Allign
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1948803234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948803233}
+  m_LocalRotation: {x: 0.03645562, y: 0.5117933, z: -0.006374355, w: 0.8583112}
+  m_LocalPosition: {x: 59.13, y: -1.52, z: 163.43}
+  m_LocalScale: {x: 28.316807, y: 11.243021, z: 17.33115}
+  m_Children: []
+  m_Father: {fileID: 95126565578331562}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 3.9630003, y: 61.666004, z: 1.5150001}
+--- !u!33 &1948803237
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948803233}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1948803236
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948803233}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1948803235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948803233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Nie patrz w s\u0142o\u0144ce, albo przynajmniej zas\u0142o\u0144 oczy ..."
+  duration: 5.42
 --- !u!1 &4373949816526509001
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4373949817118782054}
   m_LocalRotation: {x: -0.071591154, y: -0.08094883, z: 0.005829457, w: 0.9941268}
-  m_LocalPosition: {x: 27.244614, y: -23.331036, z: -16.725204}
+  m_LocalPosition: {x: -27.1, y: -24.6, z: -25.5}
   m_LocalScale: {x: 12.554002, y: 11.243021, z: 17.33115}
   m_Children: []
   m_Father: {fileID: 95126565578331562}
@@ -202,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Press E to shoot hook
+  text: "tego etapu nie da si\u0119 przej\u015B\u0107."
   duration: 3
 --- !u!1 &6512889408995033881
 GameObject:
@@ -234,6 +643,12 @@ Transform:
   - {fileID: 4373949817118782050}
   - {fileID: 4373949816526508997}
   - {fileID: 1206852048}
+  - {fileID: 1126977847}
+  - {fileID: 1948803234}
+  - {fileID: 183067345}
+  - {fileID: 1044424590}
+  - {fileID: 475365318}
+  - {fileID: 1151771946}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

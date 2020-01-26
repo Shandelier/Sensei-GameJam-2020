@@ -27,6 +27,7 @@ public class SpawnCheckpoint : MonoBehaviour
                 SoundManager.PlaySound(SoundManager.Sound.Checkpoint);
                 GameObject.FindGameObjectsWithTag("LightSource")[0].GetComponent<Animation>().Play();
                 myParticleSystem.Emit(80);
+                LectorController.Get.Show(0, 3, "Osiągnąłeś punkt kontrolny");
                 // Destroy(myParticleSystem, 10);
             }
         }

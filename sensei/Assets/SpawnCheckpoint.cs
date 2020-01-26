@@ -7,6 +7,13 @@ public class SpawnCheckpoint : MonoBehaviour
 {
     public int index = -1;
 
+    void Start() {
+        var myParticleSystem = gameObject.GetComponentInChildren<ParticleSystem>();
+        if (myParticleSystem != null) {
+            myParticleSystem.Stop();
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Player entered collider");
@@ -14,8 +21,11 @@ public class SpawnCheckpoint : MonoBehaviour
         {
             Debug.Log("Player entered collider");
             var myParticleSystem = gameObject.GetComponentInChildren<ParticleSystem>();
-            myParticleSystem.Stop();
-            Destroy(myParticleSystem, 10);
+
+            if (myParticleSystem != null) {
+                myParticleSystem.Emit(80);
+                // Destroy(myParticleSystem, 10);
+            }
         }
     }
 }

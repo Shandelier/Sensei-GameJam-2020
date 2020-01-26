@@ -56,7 +56,7 @@ namespace Core.Player
         }
 
     private async UniTask blinkForSeconds(float firstColor, float secondColor = 0.05f) {
-        objMaterial.color = Color.magenta;
+        objMaterial.color = Color.cyan;
 
         await UniTask.Delay(TimeSpan.FromSeconds(firstColor), ignoreTimeScale: false);
 

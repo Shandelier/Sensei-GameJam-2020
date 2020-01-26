@@ -126,7 +126,7 @@ public class GrapplingHook : MonoBehaviour
             
             foreach (var hit in hits)
             {
-                if (hit.collider.gameObject.tag != "PlayerTag")
+                if (hit.collider.gameObject.tag != "PlayerTag" && !hit.collider.isTrigger)
                 {
                     Debug.Log("Hooked!");
                     

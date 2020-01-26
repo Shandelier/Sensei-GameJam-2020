@@ -25,21 +25,27 @@ public class BuddhaRocketMangaer : MonoBehaviour
                 this.playOnce = false;
                 Debug.Log("YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY");
 
-                await UniTask.Delay(8000, ignoreTimeScale: false);
+                await UniTask.Delay(1000, ignoreTimeScale: false);
 
-                SoundManager.PlaySound(SoundManager.Sound.ducktales);
+                // SoundManager.PlaySound(SoundManager.Sound.ducktales);
                 
                 await UniTask.Delay(2000, ignoreTimeScale: false);
 
-                this.buddha1.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0), ForceMode.Acceleration);
+                this.buddha1.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0), ForceMode.Acceleration);
 
                 await UniTask.Delay(1000, ignoreTimeScale: false);
 
-                this.buddha2.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0), ForceMode.Acceleration);
+                this.buddha1.GetComponent<Rigidbody>().AddForce(new Vector3(0, 10000, 0), ForceMode.Acceleration);
+                this.buddha2.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0), ForceMode.Acceleration);
 
                 await UniTask.Delay(1000, ignoreTimeScale: false);
 
-                this.buddha3.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0), ForceMode.Acceleration);
+                this.buddha2.GetComponent<Rigidbody>().AddForce(new Vector3(0, 10000, 0), ForceMode.Acceleration);
+                this.buddha3.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0), ForceMode.Acceleration);
+
+                await UniTask.Delay(1000, ignoreTimeScale: false);
+
+                this.buddha3.GetComponent<Rigidbody>().AddForce(new Vector3(0, 10000, 0), ForceMode.Acceleration);
                 
             }
         }

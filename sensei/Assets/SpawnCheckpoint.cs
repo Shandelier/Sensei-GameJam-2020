@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core.SoundManager;
 
 public class SpawnCheckpoint : MonoBehaviour
 {
@@ -22,8 +23,9 @@ public class SpawnCheckpoint : MonoBehaviour
             Debug.Log("Player entered collider");
             var myParticleSystem = gameObject.GetComponentInChildren<ParticleSystem>();
 
-            if (myParticleSystem != null) {
+            if (myParticleSystem != null && this.index != PlayerRespawnData.checkpointIndex) {
                 myParticleSystem.Emit(80);
+                SoundManager.PlaySound(SoundManager.Sound.Checkpoint);
                 // Destroy(myParticleSystem, 10);
             }
         }

@@ -15,8 +15,10 @@ namespace Core.SoundManager
             Gong1,
             Gong2,
             Gong3,
-
+            Notification,
+            Checkpoint
         }
+        
         public enum Music{
             idleAmbient,
             dynamicRunner,

@@ -63,7 +63,6 @@ public class PlayerMoveWithPlatform : MonoBehaviour
         }
 
         UpdateDeltaTransform();
-        Debug.Log($"DELTA {positionDelta}");
-        player.transform.position += positionDelta;
+        player.GetComponent<Rigidbody>().position += positionDelta;
     }
 }

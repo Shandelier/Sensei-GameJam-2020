@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Core.SoundManager;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -103,6 +104,7 @@ public class GrapplingHook : MonoBehaviour
             }
             else
             {
+                SoundManager.PlaySound(SoundManager.Sound.Throw);
                 isLaunched = true;
                 hookPosition = Camera.main.transform.position;
                 hookVelocity = Camera.main.transform.forward * speed;
@@ -141,6 +143,7 @@ public class GrapplingHook : MonoBehaviour
 
                     hookPosition = attachedPoint;
                     hookDistance = Vector3.Distance(attachedPoint, Camera.main.transform.position) * springDistanceFactor;
+                    SoundManager.PlaySound(SoundManager.Sound.Whip);
                     isAttached = true;
                     isLaunched = false;
                     break;

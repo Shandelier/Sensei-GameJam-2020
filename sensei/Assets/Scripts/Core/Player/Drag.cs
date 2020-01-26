@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Core.SoundManager;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -44,6 +45,7 @@ public class Drag : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1))
             {
+                
                 startTime = System.DateTime.UtcNow;
                 holded = true;
             }
@@ -59,6 +61,7 @@ public class Drag : MonoBehaviour
                 touched = false;
                 holded = false;
                 transform.localScale = basicScale;
+                SoundManager.PlaySound(SoundManager.Sound.Throw);
             }
         }
 

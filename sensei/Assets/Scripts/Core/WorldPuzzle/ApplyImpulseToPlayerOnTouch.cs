@@ -33,7 +33,9 @@ public class ApplyImpulseToPlayerOnTouch : MonoBehaviour
                 return;
             }
             var vel = rb.GetPointVelocity(other.contacts[0].point);
-            other.gameObject.GetComponent<Rigidbody>().AddForce(vel.normalized * impulseStrenght, ForceMode.Impulse);
+            if(other.gameObject.GetComponent<Rigidbody>() != null) {
+                other.gameObject.GetComponent<Rigidbody>().AddForce(vel.normalized * impulseStrenght, ForceMode.Impulse);
+            }
         }
         else
         {

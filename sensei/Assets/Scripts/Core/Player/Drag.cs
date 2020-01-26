@@ -30,9 +30,15 @@ public class Drag : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && distance <= 2.5)
         {
             if (!touched)
+            {
+                HandTransitions.playGrab();
                 touched = true;
+            }
             else
+            {
+                HandTransitions.playRelease();
                 touched = false;
+            }
         }
 
         if (touched)
@@ -52,6 +58,7 @@ public class Drag : MonoBehaviour
 
             if (Input.GetMouseButtonUp(1))
             {
+                HandTransitions.playThrow();
                 int holdingBonus = (System.DateTime.UtcNow - startTime).Milliseconds/100;
                 if (holdingBonus > 1000)
                     holdingBonus = 1000;

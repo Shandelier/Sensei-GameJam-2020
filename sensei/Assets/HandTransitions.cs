@@ -2,35 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HandTransitions : StateMachineBehaviour
+public class HandTransitions : MonoBehaviour
 {
-    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    public static Animator handAnimitor;
 
-    // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    bool defaultIdle;
 
-    // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    private void Start()
+    {
+        handAnimitor = GetComponent<Animator>();
+        defaultIdle = true;
+    }
 
-    // OnStateMove is called right after Animator.OnAnimatorMove()
-    //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that processes and affects root motion
-    //}
+    private void Update()
+    {
+        /*
+        if (Input.GetMouseButton(0) && defaultIdle)
+        {
+            handAnimitor.Play("Armature|Grab", 0);
+            //handAnimitor.SetTrigger("Grab (LPM)");
+            defaultIdle = false;
+        }
+        else if (Input.GetMouseButton(0) && !defaultIdle)
+        {
+            handAnimitor.Play("Armature|Default_Idle", 0);
+            //handAnimitor.SetTrigger("Grab (LPM)");
+            defaultIdle = true;
+        }
+        else if (Input.GetMouseButton(1) && !defaultIdle)
+        {
+            handAnimitor.Play("Armature|Throw", 0);
+            //handAnimitor.SetTrigger("Throw (PPM)");
+            defaultIdle = true;
+        }
+        */
+    }
 
-    // OnStateIK is called right after Animator.OnAnimatorIK()
-    //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that sets up animation IK (inverse kinematics)
-    //}
+    public static void playThrow()
+    {
+        handAnimitor.Play("Armature|Throw", 0);
+    }
+
+    public static void playGrab()
+    {
+        handAnimitor.Play("Armature|Grab", 0);
+    }
+
+    public static void playRelease()
+    {
+        handAnimitor.Play("Armature|Default_Idle", 0);
+    }
+    
 }

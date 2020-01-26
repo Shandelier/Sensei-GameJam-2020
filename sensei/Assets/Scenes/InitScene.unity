@@ -56607,6 +56607,16 @@ PrefabInstance:
       propertyPath: m_Animations.Array.data[0]
       value: 
       objectReference: {fileID: 7400000, guid: a2710737c63147a45be611d183812990, type: 2}
+    - target: {fileID: 1006405122324822282, guid: 653b137877dc7e54eb662c801853cce4,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: a2710737c63147a45be611d183812990, type: 2}
+    - target: {fileID: 1006405122324822282, guid: 653b137877dc7e54eb662c801853cce4,
+        type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8351915713810886337, guid: 653b137877dc7e54eb662c801853cce4,
         type: 3}
       propertyPath: m_Name

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Core.SoundManager;
+using Core.Player;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -17,6 +18,7 @@ public class Drag : MonoBehaviour
     bool holded;
     private Collider col;
     private Rigidbody rb;
+    private bool willFreeze = false;
 
     private void Start()
     {
@@ -40,12 +42,20 @@ public class Drag : MonoBehaviour
                 col.enabled = false;
                 rb.useGravity = false;
             }
+            else if (willFreeze){
+                HandTransitions.playRelease();
+                touched = false;
+                col.enabled = true;
+                rb.useGravity = true;
+                gameObject.AddComponent<FrozenObjectState>();
+                willFreeze = false;
+            }
             else
             {
                 HandTransitions.playRelease();
                 touched = false;
                 col.enabled = true;
-                rb.useGravity = false;
+                rb.useGravity = true;
             }
         }
 
@@ -57,6 +67,10 @@ public class Drag : MonoBehaviour
             Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             this.transform.position = objPosition;
 
+            if(Input.GetKeyDown(KeyCode.F)){
+                willFreeze = !willFreeze;
+            }
+
             if (Input.GetMouseButtonDown(1))
             {
                 startTime = System.DateTime.UtcNow;
@@ -66,7 +80,8 @@ public class Drag : MonoBehaviour
             if (Input.GetMouseButtonUp(1))
             {
                 HandTransitions.playThrow();
-                int holdingBonus = (System.DateTime.UtcNow - startTime).Milliseconds/100;
+                float holdingBonus = .2f;
+                holdingBonus += (System.DateTime.UtcNow - startTime).Milliseconds/100;
                 if (holdingBonus > 1000)
                     holdingBonus = 1000;
 
@@ -84,13 +99,13 @@ public class Drag : MonoBehaviour
             transform.localScale += new Vector3(0.03f, 0.03f, 0.03f);
     }
     IEnumerator ChangeBackMass(Rigidbody rb, float waitTime){
-        if(rb.SweepTest(Vector3.zero, out RaycastHit hit, 0f)){
-            rb.useGravity = true;
-            print("dupa");
-            yield break;
-        }
+      
         yield return new WaitForSeconds(.2f + waitTime);
         rb.useGravity = true;
+        if(willFreeze)
+            gameObject.AddComponent<FrozenObjectState>();
+            
+            willFreeze = false;
 
     }
 }

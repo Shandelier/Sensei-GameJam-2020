@@ -10,12 +10,14 @@ public class SenseiRevealer : MonoBehaviour
     Material material;
     bool hasStartedRevealing = false;
     float startTime = -999;
+    private bool alreadyVisited = false; 
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "PlayerTag")
+        if (other.gameObject.tag == "PlayerTag" && !alreadyVisited )
         {
             Reveal();
+            alreadyVisited = true;
         }
     }
 

@@ -73,7 +73,7 @@ namespace Core.Player
             {
                 if (!settings || settings.changeKinematic)
                 {
-                    rb.isKinematic = true;
+                    rb.isKinematic = false;
                 }
                 
                 rb.velocity = savedVelocity;

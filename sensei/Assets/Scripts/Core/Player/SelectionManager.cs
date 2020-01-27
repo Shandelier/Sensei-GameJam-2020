@@ -24,9 +24,11 @@ public class SelectionManager : MonoBehaviour
             _selection = null;
         }
         
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        var ray = Camera.main.ScreenPointToRay(new Vector3(Camera.main.pixelWidth /2, Camera.main.pixelHeight/2,1));
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        int layer = 1<<8;
+        layer = ~layer;
+        if (Physics.Raycast(ray, out hit, 30, layer))
         {
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))

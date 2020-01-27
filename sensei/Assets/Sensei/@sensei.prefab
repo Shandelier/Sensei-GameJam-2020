@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensei: {fileID: 3115585683674844399}
---- !u!65 &3138966452591717523
-BoxCollider:
+--- !u!64 &6906201377987718068
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3115585683674844399}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.2759147, y: 5.450953, z: 5.2759147}
-  m_Center: {x: -0.06, y: 2.71, z: 2.51}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 15819f69f1e18774ca1a9c2e796efdd0, type: 3}
 --- !u!1 &8375444988321999103
 GameObject:
   m_ObjectHideFlags: 0

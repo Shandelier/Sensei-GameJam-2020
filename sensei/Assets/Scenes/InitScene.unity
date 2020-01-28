@@ -56628,6 +56628,11 @@ PrefabInstance:
       propertyPath: duration
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1126977848, guid: 37796648fd575644388a721687038d8b, type: 3}
+      propertyPath: text
+      value: "Znajd\u017A s\u0142o\u0144ce na niebie by znale\u017A\u0107 drog\u0119
+        na ziemi. "
+      objectReference: {fileID: 0}
     - target: {fileID: 1206852049, guid: 37796648fd575644388a721687038d8b, type: 3}
       propertyPath: duration
       value: 5

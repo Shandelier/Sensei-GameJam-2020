@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: "Lataj\u0105ca epeleryna na szczycie tej g\xF3ry"
-  duration: 3
+  duration: 5
 --- !u!1 &1044424589
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,9 +202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59f49ec4c3f7194a931e2777436b0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "Znajd\u017A ksi\u0119\u017Cyc na niebie by znale\u017A\u0107 drog\u0119
-    na ziemi. "
-  duration: 3
+  text: "Znajd\u017A s\u0142o\u0144ce na niebie by znale\u017A\u0107 drog\u0119 na
+    ziemi. "
+  duration: 5
 --- !u!1 &1151771945
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Nie ma tu Double Jumpa!
-  duration: 3
+  duration: 5
 --- !u!1 &1948803233
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Dawaj E!
-  duration: 3
+  duration: 5
 --- !u!1 &4373949817118782054
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: "tego etapu nie da si\u0119 przej\u015B\u0107."
-  duration: 3
+  duration: 5
 --- !u!114 &7770014607589871993
 MonoBehaviour:
   m_ObjectHideFlags: 0
